@@ -5,3 +5,7 @@ function getRandomInt(min, max) {
 function getRandomFloat(min, max, fixed) {
     return Number((Math.random() * (max - min) + min).toFixed(fixed));
 }
+
+function uniqueId() {
+    return Math.random().toString(36).substring(2, 10) + '-' + Date.now().toString(36);
+}
